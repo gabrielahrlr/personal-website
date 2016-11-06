@@ -1,0 +1,781 @@
+/********** Base styles **********/
+body {
+ /* background: #4d4d4d;*/
+  font-family: 'PT Sans Narrow', sans-serif;
+  /*	background: #574f55;*/
+}
+
+
+/****** HEADER ******/
+#header-nav{
+  background-color: #f2f2f2;
+  border-radius: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  box-shadow: 0 0 20px #000;
+}
+.navbar-header{
+	height: 80px;
+}
+
+.navbar-brand h1 {/* My Name */
+	color: black;
+	font-size: 1.6em;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 0;
+	line-height: .75;
+  font-variant: small-caps;
+}
+
+.navbar-brand h2 {/*My Profession */
+  color: #5826ff;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{ /* Remove the underline */
+  text-decoration: none;
+}
+/*  Collapsing Button Styling */
+.navbar-header button.navbar-toggle {
+  border: 1px solid black;
+}
+
+.navbar-header .icon-bar{
+	border: 2px solid black;
+}
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -35px;
+}
+
+
+/* Nav  Styling*/
+#nav-list a{
+  margin-top: 3px;
+  margin-left: 2px;
+  color: black;
+  font-size: 1.2em;
+}
+#nav-list a:hover{
+	text-shadow: 1px 1px 1px #222;
+}
+li hr{
+ 	width: 95%;
+ 	border: 1px solid black;
+ }
+/****** END HEADER ******/
+
+/****** MAIN CONTENT- Home Page ******/
+/* Slideshow container */
+#slideshow-section{
+  margin-top: auto;
+  background-color:  #4d4d4d;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  margin-top: 110px;
+}
+
+img.slide{
+  margin-top: 0px;
+  border: 3px solid black;
+  box-shadow: 0 0 50px #000;
+  border: 5px  solid #000;
+
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(88, 38, 255, 0.8);
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 50px;
+}
+.active, .dot:hover {
+  background-color: #b5a3f5;
+}
+/****** END MAIN CONTENT- Home Page ******/
+
+
+/**** About Section ****/
+section#about{
+  margin-top: auto;
+  background: #f2f2f2;
+  min-width: 100%;
+  min-height: 555px;
+  position: relative;
+}
+section#about div#quote{
+  font-size: 1.2em;
+  font-style: italic;
+  width: 33%;
+}
+#quote #text-quote{
+  float: left;
+  margin-top: 15px;
+}
+#quote #yoda{
+  width: 80px;
+  height: 50px;
+  float: right;
+  margin-left: 10px;
+  background: url("../img/yoda.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+div.imgMe{
+  width: 33%;
+  height: 20px;
+}
+div#about-photos{
+  margin-top: 30px;
+}
+p#aboutKey{
+  font-size: 1.6em;
+  font-variant: small-caps;
+}
+.icon-spinner6:before {
+  content: "\e97f";
+  font-size: 0.6em;
+}
+p.aboutMe{
+  font-size: 1.2em;
+}
+#barcaMe, #workMe, #runMe, #travelMe{
+  height: 230px;
+  width: 100%;
+  margin: auto auto 35px auto;
+  position: relative;
+  border: 2px solid white;
+  overflow: hidden;
+}
+#travelMe{
+  background: url('../img/me_pisa.jpg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+}
+#runMe{
+  background: url('../img/me_run.jpg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#workMe{
+  background: url('../img/me_work.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#barcaMe{
+  background: url('../img/me_barca.jpg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/**** END About Section ****/
+
+
+/**** CV Section ****/
+section#cv{
+  margin-top: auto;
+  background: #b3b3b3;
+}
+#cv #cv-title{
+  margin-top: 25px;
+  font-size: 1.9em;
+  color: black;
+}
+#cv #cv-img{
+  margin: 15px auto;
+  border-radius: 50%;
+  border: 2px solid rgba(88, 38, 255, 1);
+  box-shadow: 1px 1px 1px #000;
+}
+#cv #cv-download:hover{
+  color: #b5a3f5;
+}
+#cv #cv-download{
+  border-radius: 5px;
+  width: 150px;
+  display: block;
+  cursor: pointer;
+  padding: auto;
+  margin: auto;
+  font-size: 0.9em;
+  zoom: 1;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px black;
+  background: black;
+  color: white;
+  margin: 20px auto 20px auto;
+}
+/**** CV Section ****/
+
+/**** Portfolio Section *****/
+#portfolio-content{
+  width: 100%;
+  margin-top: auto;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #f2f2f2;
+  color: black;
+}
+#portfolio-content>h2{
+  padding: 15px;
+}
+#drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+  height: 250px;
+  width: 100%;
+  margin: auto auto 35px auto;
+  position: relative;
+  border: 2px solid white;
+  overflow: hidden;
+}
+#drug-tile{
+  background: url('../img/drug.png') repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#neuro-tile{
+  background: url('../img/neuro1.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#db-tile{
+  background: url('../img/db.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#new-tile{
+  background: url('../img/net.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#pr-tile{
+  background: url('../img/pR85.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#onto-tile{
+  background: url('../img/onto.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#sf-tile{
+  background: url('../img/SF.png') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#sketch-tile{
+  background: url('../img/sketch.jpg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+#drug-tile span, #neuro-tile span, #db-tile span, #new-tile span, #pr-tile span, #onto-tile span, #sf-tile span, #sketch-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #FFF;
+  opacity: 0.7;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: capitalize;
+}
+#view-more{
+  border-radius: 5px;
+  width: 120px;
+  display: block;
+  cursor: pointer;
+  padding: auto;
+  margin: auto;
+  font-size: 1.7em;
+  zoom: 1;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px black;
+  background: black;
+  color: white;
+  margin: 0px auto 25px auto;
+}
+
+/**** End Portfolio Section ****/
+
+/**** Contact Section ****/
+section#contact{
+  margin-top: auto;
+  min-width: 100%;
+  min-height: 555px;
+  background: #4d4d4d;
+  position: relative;
+}
+.sectitle{
+  color: #f2f2f2;
+}
+.leftSide{
+  margin-top: 20px;
+  width: 40%;
+  float: left;
+}
+.photo{
+  background: url('../img/me_2_2.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.frame{
+  width: 200px;
+  height: 200px;
+  margin: 50px auto 0;
+  border-radius: 50%;
+  background-position: 20% 15%;
+  border: 6px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+p#contact_p1{
+  margin-top: 10px;
+  color: #f2f2f2;
+  font-size: 1.6em;
+  font-variant: small-caps;
+}
+p#contact_p2{
+  color: #f2f2f2;
+  font-size: 1.3em;
+}
+.leftSide .social-net{
+  margin: auto;
+  display: block;
+}
+.social-net ul{
+  margin: 0;
+  padding: 5px;
+}
+.social-net ul li{
+  margin: 5px;
+  list-style: none outside none;
+  display: inline-block;
+}
+li a:hover{
+  text-decoration: none;
+}
+.social-net span{
+  width: 80px;
+  height: 80px;
+  background-color: #909AA0;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+  padding: 8px 8px 8px 8px;
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.social-net span#in:hover{
+  background-color: #2a86d6;
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.social-net span#git:hover{
+  background: black;
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.social-net span#sky:hover{
+  background: #4dc3ff;
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.social-net span#twit:hover{
+  background-color: #66b3ff;
+}
+.rightSide{
+  margin-top: 20px;
+  width: 55%;
+  float: right;
+}
+.fm-block{
+  display: block;
+}
+.fm-title{
+  position: relative;
+  display: inline-block;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #f2f2f2;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+.input-display{
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.input-display .input-base{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.input-display .input-element{
+  position: relative;
+  height: 35px;
+}
+.input-element textarea#name{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.input-element textarea#email{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.input-element textarea#subject{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.rightSide #contactMessage{
+  width: 100%;
+  height: 170px;
+  border-radius: 5px;
+}
+.go-left{
+  float: left;
+}
+.info{
+  font-size: 1em;
+  color: #f2f2f2;
+}
+.validation-error{
+  font-size: 1em;
+}
+.go-right{
+  float: right;
+}
+.go-right #send-msg{
+  background: #f2f2f2;
+  color: black;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  padding: 0.3em 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  zoom: 1;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px black;
+  margin-bottom: 20px;
+}
+.go-right #send-msg:hover{
+  background: black;
+  color: white;
+}
+/**** End Contact Section ****/
+
+/****  Footer  ****/
+.panel-footer{
+  margin-top: auto;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #f2f2f2;
+  border-top: 0;
+}
+.social ul{
+  margin: 0;
+  padding: 5px;
+}
+.social ul li{
+  margin: 5px;
+  list-style: none outside none;
+  display: inline-block;
+}
+.social span{
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  color: #4d4d4d;
+  margin: auto;
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.social span#in:hover{  
+  text-shadow: 1px 1px 1px gray;
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.social span#git:hover{
+  text-shadow: 1px 1px 1px gray;
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.social span#sky:hover{
+  text-shadow: 1px 1px 1px gray;
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.social span#twit:hover{
+  text-shadow: 1px 1px 1px gray;
+}
+/**** End Footer  ****/
+
+/******************** Media Queries *******************/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  /* Home Page */
+  .container .slideshow{
+    background: url('../img/gabriela_life_1200.png') no-repeat;
+    width: 855px;
+    height: 576px;   
+	  margin: 15px auto;
+	  box-shadow: 0 0 30px #000000;
+  	border: 2px  solid #000000;
+  }
+  /* End Home Page */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	/* Home Page */
+  .container .slideshow{
+    background: url('../img/gabriela_life_992.png') no-repeat;
+    width: 829px;
+    height: 559px;
+    margin: 15px auto;
+    box-shadow: 0 0 30px #000000;
+  	border: 2px  solid #000000;
+  }
+  /* END Home Page */
+
+  /* About Section*/
+  section#about div#quote{
+    font-size: 1.2em;
+    font-style: italic;
+    width: 40%;
+  }
+  #barcaMe, #workMe, #runMe, #travelMe{
+    height: 200px;
+    width: 100%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END About Section*/
+
+  /* Portfolio Section */
+  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+    height: 200px;
+    width: 100%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END Portfolio Section */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .slideshow{
+    background: url('../img/gabriela_life_768.png') no-repeat;
+    width: 100%;
+    height: 517px;
+    margin: 15px auto;
+    box-shadow: 0 0 30px #000000;
+  	border: 2px  solid #000000;
+  }
+  /* End Home Page */
+
+  /* About Section*/
+    section#about div#quote{
+    font-size: 1.2em;
+    font-style: italic;
+    width: 55%;
+  }
+  #workMe, #runMe, #travelMe{
+    height: 200px;
+    width: 100%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END About Section*/
+
+  /* Portfolio Section */
+  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+    height: 200px;
+    width: 100%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END Portfolio Section */
+}
+
+/***** Extra small devices only *****/
+/* Collapsable bar styling in xs devices */
+@media (max-width: 767px) {
+  /*** HEADER ***/
+	#collapsable-nav {
+		background: #E6E6E6;
+		border-top: 3px solid black;
+		color: black; 
+	}
+  /* END HEADER */
+
+  /* SLIDESHOW */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(88, 38, 255, 0.8);
+  }
+  /* END SLIDESHOW */
+
+  /* About Section*/
+  section#about div#quote{
+    font-size: 1.2em;
+    font-style: italic;
+    width: 60%;
+  }
+  #barcaMe, #workMe, #runMe, #travelMe{
+    height: 235px;
+    width: 90%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END About Section*/
+
+  /* Portfolio Section */
+  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+    height: 250px;
+    width: 80%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END Portfolio Section */
+
+  /* Contact Section */
+  .leftSide{
+    margin-top: 20px;
+    width: 100%;
+    clear: both;
+  }
+  .rightSide{
+    margin-top: 20px;
+    width: 100%;
+    clear: both;
+  }
+  /* END Contact Sectiom */
+}
+
+/****** Super extra small devices only (e.g. iPhone 4)******/
+@media(max-width:560px) {
+  #barcaMe, #workMe, #runMe, #travelMe{
+    height: 235px;
+    width: 60%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  .col-xxs-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:left;
+    width: 100%;
+  }
+
+  /* Portfolio Section */
+  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+    height: 290px;
+    width: 70%;
+    margin: auto auto 35px auto;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* END Portfolio Section */
+
+}

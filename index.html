@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Gabriela HrLr</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans+Narrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <h1  class="text-center">Gabriela Hernández Larios</h1>
+            </a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed visible-xs"
+            data-toggle="collapse" data-target="#collapsable-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+       <div id="collapsable-nav" class="collapse navbar-collapse">
+         <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <li class="text-center">
+            <a href="index.html"><span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            <hr class="visible-xs">
+           </li>
+           <li class="text-center">
+            <a href="#portfolio-content"><span class="glyphicon glyphicon-briefcase"></span><br class="hidden-xs">
+            Portfolio</a>
+            <hr class="visible-xs">
+           </li>
+           <li class="text-center">
+              <a href="#cv"><span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs">CV</a>
+              <hr class="visible-xs">
+           </li>
+           <li class="text-center">
+              <a href="#about"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+              <hr class="visible-xs">
+           </li>
+           <li class="text-center">
+              <a href="#contact"><span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs"> Contact</a>
+           </li>
+         </ul> <!-- #nav-list -->
+       </div> <!-- .collapse .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav> <!-- #header-nav -->
+  </header>  <!-- End of Header -->
+
+  <section id="slideshow-section"> <!-- slideshow section -->
+    <div id="main-content" class="container">
+      <div class="slideshow-container">
+        <div class="mySlides">
+         <img  src="img/gabriela_data_1200.png" class=" slide img-responsive" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="img/gabriela_works.jpg" class="slide img-responsive" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <img src="img/things_love.png" class= "slide img-responsive" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div> <!-- End of slideshow -->
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div> <!-- End of #main-content -->
+  </section><!-- Main #slideshow section -->
+
+
+<!--About section-->
+<section id="about">
+  <div class="container">
+    <h2 id="about-title" class="text-center">About Me</h2>
+    <div id= quote class="container">
+        <div id="text-quote" class="text-center">"Do. Or do not. There is no try."
+        -Master Yoda</div>
+        <div id="yoda"></div> 
+    </div>
+    <div id= about-photos class="row">
+      <div class="container">
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <div id="travelMe"></div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <div id="runMe"></div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <div id="workMe"></div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <div id="barcaMe" class="hidden-sm"></div>
+        </div>
+      </div> 
+    </div>
+    <p id="aboutKey" class="text-center"> Multidisciplinary  <span class="icon-spinner6"></span> Eager of Knowledge <span class="icon-spinner6"></span> Self-learner</p>
+    <p class="aboutMe text-center"> Hi, I'm Gabriela. Data Scientist and former Telecommunications &amp; Electronics Engineer. I am passionate about data, technology, and innovation. 
+    </p>
+    <p class="aboutMe text-center"> I am a mexican girl, currently living in Barcelona but open to move to other cities/countries to get new work experiences.
+    </p>
+    <p class="aboutMe text-center">What I love the most of Data Science is its underlying multidisciplinary essence that allows me to work and develop models for different fields. I've worked on projects in the areas of telecommunications, business, bioinformatics, visualization, image recognition and more. 
+    </p>
+    <p class="aboutMe text-center">
+      I love to interpret data, create models, analyze results and understand how they can impact business.
+    </p>
+    <p class="aboutMe text-center">
+      I love to travel, run and work!
+    </p>
+    <p class="aboutMe text-center">
+      I am a big football (soccer) fan! &hearts;
+    </p>
+    <br>
+  </div> <!-- End .container -->
+</section><!--End #about section-->
+
+<!--CV section-->
+<section id="cv">
+  <div class="container">
+    <div id="cv-title" class="text-center"> Discover what I've been doing
+    over the years &amp; know more about my accomplishments.
+    <img id="cv-img" class="img-responsive text-center" src="img/cv_small.png">
+    <div id="cv-download" class="text-center" onclick="window.open('docs/CV.pdf', '_blank');">Download CV</div>
+  </div>
+</section>
+<!--END #CV section-->
+
+<!-- Portfolio Section -->   
+  <section id="portfolio-content" class="container">
+   <h2 class="text-center">My Latest Projects</h2>
+   <section id= port class="row">
+      <div class="container">
+        <div class="port col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <a href="https://github.com/gabrielahrlr/BindingAffinity-Prediction" target="_blank"><div id="drug-tile"><span>Protein-Ligand Binding Affinity Prediction
+         </span></div></a>
+        </div>
+
+        <div class="port col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <a href="docs/neurokiff.pdf" target="_blank"><div id="neuro-tile"><span> NEUROKIFF: "Taste IT"
+         </span></div></a>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <a href="https://github.com/gabrielahrlr/DBNormalizer" target="_blank"><div id="db-tile"><span>DBNormalizer
+         </span></div></a>
+         </div>   
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <a href="https://github.com/gabrielahrlr/News-Network-Analysis" target="_blank"><div id="new-tile"><span> News Network Analysis</span></div></a>
+           </a>
+         </div> 
+
+         <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <a href="https://github.com/gabrielahrlr/PageRank" target="_blank"><div id="pr-tile"><span>Airports PageRank
+         </span></div></a>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+         <a href="https://github.com/gabrielahrlr/SoftwarePackageOntology" target="_blank"><div id="onto-tile"><span>Software Package Ontology
+         </span></div></a>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <a href="docs/SF_crimes.pdf" target="_blank"><div id="sf-tile"><span>SF Crimes Classification
+         </span></div></a>
+         </div>   
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+           <a href="https://www.facebook.com/sketchingscience.atgc/" target="_blank"><div id="sketch-tile"><span>Sketching Science
+         </span></div></a>
+         </div>
+      </div> <!-- End .container-->
+   </section>  <!-- End of Portfolio Section -->
+   <div id="view-more" class="text-center" onclick="window.open('https://github.com/gabrielahrlr?tab=repositories', '_blank');">View More</div>
+  </section><!--End of #portfolio-content -->
+
+  <!--contact section-->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center sectitle">Contact</h2>
+      <div class="leftSide">
+        <div class="photo frame"></div>
+        <p id="contact_p1" class="text-center"> I love to collaborate, meet people, and networking.</p>
+        <p id="contact_p2" class="text-center">Want to work together? Just want to say hi? Get in touch.</p>
+        <div class="social-net text-center">
+          <ul>
+            <li>
+              <a href="https://es.linkedin.com/in/gabriela-hernández-larios-b0134365" target="_blank">
+                <span id="in" class="icon-linkedin2"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/gabrielahrlr" target="_blank">
+                <span id="git" class="icon-github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="skype:gabrielahrlr">
+                <span id="sky" class="icon-skype"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/GabrielaHrLR" target="_blank">
+                <span id="twit" class="icon-twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- End .leftSide -->
+      <div class="rightSide">
+        <div class="fm-block">
+          <div class="fm-title">
+            Name:*
+          </div>
+          <div class="input-display">
+            <div class="input-element">
+              <textarea id="name" placeholder="Your name"></textarea> 
+            </div>
+          </div>
+        </div>
+
+         <div class="fm-block">
+          <div class="fm-title">
+            Email:*
+          </div>
+          <div class="input-display">
+            <div class="input-element">
+              <textarea id="email" placeholder="Your e-mail"></textarea> 
+            </div>
+          </div>
+        </div>
+
+        <div class="fm-block">
+          <div class="fm-title">
+            Subject:*
+          </div>
+          <div class="input-display">
+            <div class="input-element">
+              <textarea id="subject" placeholder="Subject"></textarea> 
+            </div>
+          </div>
+        </div>
+        <div class="fm-title"> Message:*</div>
+        <textarea id="contactMessage" placeholder="Your Message"></textarea>
+        <div class="fm-block">
+          <div class="go-left">
+            <div class="info">* Denotes a required field</div>
+            <div class="validation-error" style="display: block;">Please complete all required fields before submitting</div>
+          </div>
+          <div class="go-right">
+            <div id="send-msg">Send</div>
+          </div>
+        </div>
+      </div> <!-- End .rightSide -->
+    </div> <!-- End .container -->
+  </section><!--End #contact section-->
+
+  <footer class="panel-footer">
+  <div class="container">
+    <div class="social text-center">
+          <ul>
+            <li>
+              <a href="https://es.linkedin.com/in/gabriela-hernández-larios-b0134365" target="_blank">
+                <span id="in" class="icon-linkedin2"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/gabrielahrlr" target="_blank">
+                <span id="git" class="icon-github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="skype:gabrielahrlr">
+                <span id="sky" class="icon-skype"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/GabrielaHrLR" target="_blank">
+                <span id="twit" class="icon-twitter"></span>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <div class="text-center">
+      &copy; Copyright 2016 Gabriela Hernández Larios • All rights reserved • To license images get in touch.
+    </div>
+  </div>
+</footer>
+
+   <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+ </body>
+</html>

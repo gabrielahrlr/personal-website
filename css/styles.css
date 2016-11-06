@@ -190,35 +190,13 @@ p.aboutMe{
   font-size: 1.2em;
 }
 #barcaMe, #workMe, #runMe, #travelMe{
-  height: 230px;
+  height: 250px;
   width: 100%;
   margin: auto auto 35px auto;
   position: relative;
   border: 2px solid white;
   overflow: hidden;
 }
-#travelMe{
-  background: url('../img/me_pisa.jpg') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-
-}
-#runMe{
-  background: url('../img/me_run.jpg') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#workMe{
-  background: url('../img/me_work.jpeg') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#barcaMe{
-  background: url('../img/me_barca.jpg') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-
 /**** END About Section ****/
 
 
@@ -269,57 +247,17 @@ section#cv{
 #portfolio-content>h2{
   padding: 15px;
 }
-#drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
-  height: 250px;
-  width: 100%;
-  margin: auto auto 35px auto;
+.portfolio-img{
   position: relative;
+  margin: auto auto 35px auto;
   border: 2px solid white;
   overflow: hidden;
 }
-#drug-tile{
-  background: url('../img/drug.png') repeat;
-  background-position: center;
-  background-size: 100% 100%;
+#drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
+  height: 250px;
+  width: 100%;
 }
-
-#neuro-tile{
-  background: url('../img/neuro1.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#db-tile{
-  background: url('../img/db.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-
-#new-tile{
-  background: url('../img/net.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#pr-tile{
-  background: url('../img/pR85.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#onto-tile{
-  background: url('../img/onto.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#sf-tile{
-  background: url('../img/SF.png') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#sketch-tile{
-  background: url('../img/sketch.jpg') no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-#drug-tile span, #neuro-tile span, #db-tile span, #new-tile span, #pr-tile span, #onto-tile span, #sf-tile span, #sketch-tile span{
+.portfolio-img span{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -616,26 +554,7 @@ li a:hover{
     font-style: italic;
     width: 40%;
   }
-  #barcaMe, #workMe, #runMe, #travelMe{
-    height: 200px;
-    width: 100%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
   /* END About Section*/
-
-  /* Portfolio Section */
-  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
-    height: 200px;
-    width: 100%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
-  /* END Portfolio Section */
 }
 
 /********** Small devices only **********/
@@ -657,26 +576,7 @@ li a:hover{
     font-style: italic;
     width: 55%;
   }
-  #workMe, #runMe, #travelMe{
-    height: 200px;
-    width: 100%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
   /* END About Section*/
-
-  /* Portfolio Section */
-  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
-    height: 200px;
-    width: 100%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
-  /* END Portfolio Section */
 }
 
 /***** Extra small devices only *****/
@@ -713,26 +613,7 @@ li a:hover{
     font-style: italic;
     width: 60%;
   }
-  #barcaMe, #workMe, #runMe, #travelMe{
-    height: 235px;
-    width: 90%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
   /* END About Section*/
-
-  /* Portfolio Section */
-  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
-    height: 250px;
-    width: 80%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
-  /* END Portfolio Section */
 
   /* Contact Section */
   .leftSide{
@@ -749,15 +630,7 @@ li a:hover{
 }
 
 /****** Super extra small devices only (e.g. iPhone 4)******/
-@media(max-width:560px) {
-  #barcaMe, #workMe, #runMe, #travelMe{
-    height: 235px;
-    width: 60%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
-  }
+@media(max-width:460px) {
   .col-xxs-12{
     position: relative;
     min-height: 1px;
@@ -766,16 +639,17 @@ li a:hover{
     float:left;
     width: 100%;
   }
-
-  /* Portfolio Section */
-  #drug-tile, #neuro-tile, #db-tile, #new-tile, #pr-tile, #onto-tile, #sf-tile,#sketch-tile{
-    height: 290px;
-    width: 70%;
-    margin: auto auto 35px auto;
-    position: relative;
-    border: 2px solid white;
-    overflow: hidden;
+  /* NAvbar */
+  .navbar-brand h1 {/* My Name */
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: .75;
+    font-variant: small-caps;
   }
-  /* END Portfolio Section */
+  /* END Navbar */
 
 }

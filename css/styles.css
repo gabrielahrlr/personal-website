@@ -144,7 +144,12 @@ img.slide{
 }
 /****** END MAIN CONTENT- Home Page ******/
 
-
+.anchor{
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
 /**** About Section ****/
 section#about{
   margin-top: auto;
@@ -297,6 +302,7 @@ section#contact{
   background: #4d4d4d;
   position: relative;
 }
+
 .sectitle{
   color: #f2f2f2;
 }
